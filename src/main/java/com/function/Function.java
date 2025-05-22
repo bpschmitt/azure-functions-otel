@@ -1,7 +1,5 @@
 package com.function;
 
-
-
 import com.microsoft.azure.functions.ExecutionContext;
 import com.microsoft.azure.functions.HttpMethod;
 import com.microsoft.azure.functions.HttpRequestMessage;
@@ -10,6 +8,7 @@ import com.microsoft.azure.functions.HttpStatus;
 import com.microsoft.azure.functions.annotation.AuthorizationLevel;
 import com.microsoft.azure.functions.annotation.FunctionName;
 import com.microsoft.azure.functions.annotation.HttpTrigger;
+import java.util.Optional;
 
 // OTel Imports
 import static io.opentelemetry.api.common.AttributeKey.stringKey;
@@ -19,8 +18,6 @@ import io.opentelemetry.api.common.AttributeKey;
 import io.opentelemetry.api.common.Attributes;
 import io.opentelemetry.api.metrics.Meter;
 import io.opentelemetry.api.metrics.DoubleCounter;
-
-import java.util.Optional;
 
 /**
  * Azure Functions with HTTP Trigger.
