@@ -55,6 +55,12 @@
             <artifactId>opentelemetry-sdk-extension-autoconfigure</artifactId>
             <version>1.50.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.opentelemetry</groupId>
+            <artifactId>opentelemetry-exporter-otlp</artifactId>
+            <version>1.50.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -125,3 +131,4 @@
         </plugins>
     </build>
 </project>
+
